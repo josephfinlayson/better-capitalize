@@ -18,7 +18,7 @@ module.exports.words = function(string) {
 };
 
 module.exports.array = function(array) {
-    if (array.isArray()) {
+    if (array && array.isArray()) {
         var capitalizedArray = array.map(function(item) {
         	return item.charAt(0).toUpperCase() + item.substring(1);
         });
