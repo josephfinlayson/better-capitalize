@@ -16,3 +16,14 @@ module.exports.words = function(string) {
         return false;
     }
 };
+
+module.exports.array = function(array) {
+    if (array.isArray()) {
+        var capitalizedArray = array.map(function(item) {
+        	return item.charAt(0).toUpperCase() + item.substring(1);
+        });
+        return capitalizedArray;
+    } else {
+        return false;
+    }
+};

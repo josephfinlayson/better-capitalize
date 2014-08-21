@@ -19,16 +19,23 @@ test('Capitalize first letter', function (t) {
 
 Or capitalize each word in a string:
 
-```javascript
+```
 test('Capitalize each word', function (t) {
   t.plan(1)
   t.equal(capitalize.words("united states"), "United States")
 })
 ```
 
+Or capitalize each word in an array:
+
+```
+capitalize.array(['alpha', 'beta'])
+// ['Alpha', 'Beta']
+```
+
 ## Install
 
-    npm install capitalize
+    npm install better-capitalize
 
 ## License
 
