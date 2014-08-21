@@ -15,5 +15,4 @@ module.exports.words = function(string) {
     } else {
         return false;
     }
-
 };
