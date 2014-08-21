@@ -1,16 +1,14 @@
 {
     "name": "better-capitalize",
-    "version": "0.7.3",
-    "description": "capitalize the first letter of a string, of a bunch of words, or an array, returning false if the string is undefined",
+    "version": "1.0.0",
+    "description": "capitalize the first letter of a string, of a bunch of words, or an array (with a bunch of words), returning false if the string is undefined",
     "main": "index.js",
     "dependencies": {},
     "devDependencies": {
-        "tape": "~2.4.0",
-        "markdown-code-blocks": "0.0.1",
-        "util":
+        "tape": "~2.4.0"
     },
     "scripts": {
-        "test": "markdown-code-blocks -t javascript < README.md | node"
+        "test": "node tests.js"
     },
     "repository": {
         "type": "git",

@@ -1,15 +1,8 @@
+/*jshint asi:true*/
 'use strict';
 var util = require('util');
 
-module.exports = function(string) {
-    if (string) {
-        return string.charAt(0).toUpperCase() + string.substring(1);
-    } else {
-        return false;
-    }
-};
-
-module.exports.words = function(string) {
+var words = function(string) {
     if (string) {
         return string.replace(/(^|\W)(\w)/g, function(m) {
             return m.toUpperCase();
@@ -19,13 +12,23 @@ module.exports.words = function(string) {
     }
 };
 
-module.exports.array = function(array) {
-    if (array && util.isArray(array)) {
+function capitalizeArray(array) {
+    if (array.length > 0) {
         var capitalizedArray = array.map(function(item) {
-        	return item.charAt(0).toUpperCase() + item.substring(1);
+            return words(item)
         });
         return capitalizedArray;
     } else {
-        return false;
+        return false
+    }
+}
+
+module.exports = function(value) {
+    if (typeof value === 'string') {
+        return words(value)
+    } else if (value && util.isArray(value)) {
+        return capitalizeArray(value)
+    } else {
+        return false
     }
 };
