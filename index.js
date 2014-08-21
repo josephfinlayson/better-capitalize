@@ -1,4 +1,6 @@
 'use strict';
+var util = require('util');
+
 module.exports = function(string) {
     if (string) {
         return string.charAt(0).toUpperCase() + string.substring(1);
@@ -18,7 +20,7 @@ module.exports.words = function(string) {
 };
 
 module.exports.array = function(array) {
-    if (array && array.isArray()) {
+    if (array && util.isArray(array)) {
         var capitalizedArray = array.map(function(item) {
         	return item.charAt(0).toUpperCase() + item.substring(1);
         });
