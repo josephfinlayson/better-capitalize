@@ -1,6 +1,6 @@
 {
     "name": "better-capitalize",
-    "version": "0.7.1",
+    "version": "0.7.2",
     "description": "capitalize the first letter of a string, of a bunch of words, or an array, returning false if the string is undefined",
     "main": "index.js",
     "dependencies": {},
@@ -28,7 +28,7 @@
         "email": "joseph.finlayson+npm@gmail.com"
     },
     "license": "MIT",
-    "_id": "better-capitalize@0.7.0",
+    "_id": "better-capitalize@0.7.2",
     "maintainers": [],
     "directories": {}
 }
