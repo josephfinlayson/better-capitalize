@@ -1,7 +1,7 @@
 {
     "name": "better-capitalize",
-    "version": "0.7.0",
-    "description": "capitalize the first letter of a string, or all words in a string, returning false if the string is undefined",
+    "version": "0.7.1",
+    "description": "capitalize the first letter of a string, of a bunch of words, or an array, returning false if the string is undefined",
     "main": "index.js",
     "dependencies": {},
     "devDependencies": {
